@@ -1,5 +1,5 @@
 ## 🔗 Random-Quote-Generator-Application
-[https://vishal-random-quote-generator.netlify.app/](https://vishal-random-quote-generator.netlify.app/)
+[https://vishal-random-quote-generator.vercel.app/](https://vishal-random-quote-generator.vercel.app/)
 
 
 ## ⭐ Random-Quote-Generator-Application ⭐
