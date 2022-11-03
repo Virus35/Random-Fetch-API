@@ -5,21 +5,17 @@ const clipboard = document.querySelector(".clipboard");
 const twitter = document.querySelector(".tweet");
 const button = document.querySelector("button");
 
-const randomParagraphGenerator = () => {
+const randomParagraphGenerator = async () => {
   loading();
   disableClicks();
   button.innerHTML = "Loading...";
-  fetch("https://api.quotable.io/random")
-    .then((resolve) => {
-      return resolve.json();
-    })
-    .then((resolve) => {
-      randomParagraph.innerHTML = resolve.content;
-      author.innerHTML = resolve.author;
-      removeLoading();
-      enableClicks();
-      button.innerHTML = "New Quote";
-    });
+  let response = await fetch("https://api.quotable.io/random");
+  let responseJson = await response.json();
+  randomParagraph.innerHTML = responseJson.content;
+  author.innerHTML = responseJson.author;
+  removeLoading();
+  enableClicks();
+  button.innerHTML = "New Quote";
 };
 
 const loading = () => {
@@ -40,10 +36,14 @@ const speechText = () => {
     if (speechSynthesis.speaking) {
       volume.style.background = "#5372F0";
       volume.style.color = "white";
+      disableClicks();
+      volume.classList.remove("disable");
+      clipboard.classList.remove("disable");
     } else {
       volume.style.background = "white";
       volume.style.color = "#5372F0";
       removeLoading();
+      enableClicks();
     }
   }, 10);
 };

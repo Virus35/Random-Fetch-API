@@ -29,6 +29,7 @@ This is the assignment given in the **"JavaScript Full Stack Web Developer Bootc
   👉 6. Speech API. <br>
   👉 7. fetch API. <br>
   👉 8. Window Navigator to copy stuff into system Clipboard. <br>
+  👉 9. Async & Await. <br>
 
 
 
