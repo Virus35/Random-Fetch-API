@@ -1,5 +1,5 @@
 ## 🔗 Random-Quote-Generator-Application
-[https://vishal-expense-tracker.netlify.app/](https://vishal-expense-tracker.netlify.app/)
+[https://vishal-random-quote-generator.netlify.app/](https://vishal-random-quote-generator.netlify.app/)
 
 
 ## ⭐ Random-Quote-Generator-Application ⭐
